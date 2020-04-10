@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".QuizDescrebtionFragment"
+    android:background="@color/colorPrimaryDark"
+    >
+
+    <ImageView
+        android:src="@color/colorPrimary"
+        android:id="@+id/image_desc"
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        />
+
+    <TextView
+        android:id="@+id/quizz_name_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/colorPrimarytow"
+        android:textSize="32sp"
+        android:text="Quizz Name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_desc"
+
+        />
+
+    <TextView
+        android:id="@+id/quizz_desc_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="Quizz Describtion"
+        android:textColor="@color/colorLight"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/quizz_name_desc" />
+
+    <LinearLayout
+        android:id="@+id/quizz_data"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/start_quizz"
+        app:layout_constraintTop_toBottomOf="@id/quizz_desc_desc"
+        >
+        <TextView
+            android:id="@+id/data1"
+            android:text="data"
+            android:textSize="16sp"
+            android:textColor="@color/colorLight"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/data2"
+            android:text="data"
+            android:textSize="16sp"
+            android:textColor="@color/colorLight"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/data3"
+            android:text="data"
+            android:textSize="16sp"
+            android:textColor="@color/colorLight"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/data4"
+            android:text="data"
+            android:textSize="16sp"
+            android:textColor="@color/colorLight"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/start_quizz"
+        android:text="Start Quizz"
+        android:background="@drawable/btn_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorLight"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
