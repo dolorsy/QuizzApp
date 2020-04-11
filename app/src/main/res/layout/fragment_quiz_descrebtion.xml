@@ -41,56 +41,74 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/quizz_name_desc" />
 
-    <LinearLayout
-        android:id="@+id/quizz_data"
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@id/start_quizz"
-        app:layout_constraintTop_toBottomOf="@id/quizz_desc_desc"
-        >
-        <TextView
-            android:id="@+id/data1"
-            android:text="data"
-            android:textSize="16sp"
-            android:textColor="@color/colorLight"
-            android:layout_gravity="center"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-        <TextView
-            android:id="@+id/data2"
-            android:text="data"
-            android:textSize="16sp"
-            android:textColor="@color/colorLight"
-            android:layout_gravity="center"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-        <TextView
-            android:id="@+id/data3"
-            android:text="data"
-            android:textSize="16sp"
-            android:textColor="@color/colorLight"
-            android:layout_gravity="center"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-        <TextView
-            android:id="@+id/data4"
-            android:text="data"
-            android:textSize="16sp"
-            android:textColor="@color/colorLight"
-            android:layout_gravity="center"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
 
-    </LinearLayout>
     <Button
         android:id="@+id/start_quizz"
         android:text="Start Quizz"
         android:background="@drawable/btn_background"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@color/colorLight"
+        android:textColor="@color/colorPrimarytow"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         />
+
+    <TextView
+        android:id="@+id/quizz_difficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Difficulty"
+        android:textColor="@color/colorLight"
+        app:layout_constraintStart_toStartOf="@+id/quistions_number"
+        tools:layout_editor_absoluteY="446dp" />
+
+    <TextView
+        android:id="@+id/quistions_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quistions Number"
+        android:textColor="@color/colorLight"
+        app:layout_constraintStart_toStartOf="@+id/quizz_score"
+        tools:layout_editor_absoluteY="484dp" />
+
+    <TextView
+        android:id="@+id/quizz_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:text="Score"
+        android:textColor="@color/colorLight"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="520dp" />
+
+    <TextView
+        android:id="@+id/quizz_difficulty_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Easy"
+        android:textColor="@color/colorLight"
+        app:layout_constraintBottom_toBottomOf="@+id/quizz_difficulty"
+        app:layout_constraintStart_toStartOf="@+id/quistions_number_text"
+        app:layout_constraintTop_toTopOf="@+id/quizz_difficulty" />
+
+    <TextView
+        android:id="@+id/quistions_number_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10 Quistions"
+        android:textColor="@color/colorLight"
+        app:layout_constraintBottom_toBottomOf="@+id/quistions_number"
+        app:layout_constraintStart_toStartOf="@+id/quizz_score_text"
+        app:layout_constraintTop_toTopOf="@+id/quistions_number" />
+
+    <TextView
+        android:id="@+id/quizz_score_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="64dp"
+        android:text="180 Points"
+        android:textColor="@color/colorLight"
+        app:layout_constraintBottom_toBottomOf="@+id/quizz_score"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/quizz_score" />
 </androidx.constraintlayout.widget.ConstraintLayout>
