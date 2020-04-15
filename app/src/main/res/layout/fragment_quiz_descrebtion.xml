@@ -7,7 +7,6 @@
     tools:context=".QuizDescrebtionFragment"
     android:background="@color/colorPrimaryDark"
     >
-
     <ImageView
         android:src="@color/colorPrimary"
         android:id="@+id/image_desc"
@@ -16,35 +15,35 @@
         />
 
     <TextView
-        android:id="@+id/quizz_name_desc"
+        android:id="@+id/quiz_name_desc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
         android:textColor="@color/colorPrimarytow"
         android:textSize="32sp"
-        android:text="Quizz Name"
+        android:text="quiz Name"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/image_desc"
 
         />
 
     <TextView
-        android:id="@+id/quizz_desc_desc"
+        android:id="@+id/quiz_desc_desc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
-        android:text="Quizz Describtion"
-        android:textColor="@color/colorLight"
+        android:text="quiz Describtion"
+        
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/quizz_name_desc" />
+        app:layout_constraintTop_toBottomOf="@id/quiz_name_desc" />
 
 
     <Button
-        android:id="@+id/start_quizz"
-        android:text="Start Quizz"
+        android:id="@+id/start_quiz"
+        android:text="Start quiz"
         android:background="@drawable/btn_background"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -54,11 +53,11 @@
         />
 
     <TextView
-        android:id="@+id/quizz_difficulty"
+        android:id="@+id/quiz_difficulty"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Difficulty"
-        android:textColor="@color/colorLight"
+        
         app:layout_constraintStart_toStartOf="@+id/quistions_number"
         tools:layout_editor_absoluteY="446dp" />
 
@@ -67,48 +66,48 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Quistions Number"
-        android:textColor="@color/colorLight"
-        app:layout_constraintStart_toStartOf="@+id/quizz_score"
+        
+        app:layout_constraintStart_toStartOf="@+id/quiz_score"
         tools:layout_editor_absoluteY="484dp" />
 
     <TextView
-        android:id="@+id/quizz_score"
+        android:id="@+id/quiz_score"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="64dp"
         android:text="Score"
-        android:textColor="@color/colorLight"
+        
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="520dp" />
 
     <TextView
-        android:id="@+id/quizz_difficulty_text"
+        android:id="@+id/quiz_difficulty_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Easy"
-        android:textColor="@color/colorLight"
-        app:layout_constraintBottom_toBottomOf="@+id/quizz_difficulty"
+        
+        app:layout_constraintBottom_toBottomOf="@+id/quiz_difficulty"
         app:layout_constraintStart_toStartOf="@+id/quistions_number_text"
-        app:layout_constraintTop_toTopOf="@+id/quizz_difficulty" />
+        app:layout_constraintTop_toTopOf="@+id/quiz_difficulty" />
 
     <TextView
         android:id="@+id/quistions_number_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="10 Quistions"
-        android:textColor="@color/colorLight"
+        
         app:layout_constraintBottom_toBottomOf="@+id/quistions_number"
-        app:layout_constraintStart_toStartOf="@+id/quizz_score_text"
+        app:layout_constraintStart_toStartOf="@+id/quiz_score_text"
         app:layout_constraintTop_toTopOf="@+id/quistions_number" />
 
     <TextView
-        android:id="@+id/quizz_score_text"
+        android:id="@+id/quiz_score_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="64dp"
         android:text="180 Points"
-        android:textColor="@color/colorLight"
-        app:layout_constraintBottom_toBottomOf="@+id/quizz_score"
+        
+        app:layout_constraintBottom_toBottomOf="@+id/quiz_score"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/quizz_score" />
+        app:layout_constraintTop_toTopOf="@+id/quiz_score" />
 </androidx.constraintlayout.widget.ConstraintLayout>

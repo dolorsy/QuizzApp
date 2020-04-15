@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Quizz App</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
+    <string name="back4app_server_url">https://parseapi.back4app.com/</string>
+    <string name="back4app_app_id">ya5mb5dxOcFDY4MStulBvQ90Hg5QKkA741ftyqV6</string>
+    <string name="back4app_client_key">mRI6WsiZms4iNcocJHzcFxZSbdWcgUHVO16geFyU</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
