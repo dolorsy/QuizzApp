@@ -32,7 +32,9 @@ public class QuizListAdapter extends RecyclerView.Adapter<QuizListAdapter.QuizVi
         //This is The Final Step of Adapter Working
         //You should take a Look at QuizViewHolderClass at the bottom
         // holder.textView.setText(myList.get(position));
-        Picasso.get().load(myList.get(position).getImageURL()).resize(256,holder.quizImage.getMeasuredHeight()).centerCrop().into(holder.quizImage);
+        int wid = holder.quizImage.getMeasuredWidth();
+        int hig = holder.quizImage.getMeasuredHeight();
+        Picasso.get().load(myList.get(position).getImageURL()).into(holder.quizImage);
         holder.quizName.setText(myList.get(position).getName());
         holder.quizDesc.setText(myList.get(position).getDescrib());
 
@@ -47,7 +49,6 @@ public class QuizListAdapter extends RecyclerView.Adapter<QuizListAdapter.QuizVi
     public void setList(ArrayList<QuizModel> myList) {
 
         this.myList = myList;
-        this.myList.add(new QuizModel("no","Test Quiz","No Describ ","High",5));
     }
 
     public class QuizViewHolder extends RecyclerView.ViewHolder {

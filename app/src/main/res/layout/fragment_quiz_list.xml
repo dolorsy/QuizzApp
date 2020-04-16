@@ -15,7 +15,7 @@
         android:layout_marginTop="5dp"
         android:fontFamily="@font/cabin_condensed_regular"
         android:gravity="center"
-        android:text="Main Title"
+        android:text="All Content"
         android:textColor="@color/colorPrimarytow"
         android:textSize="28sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -30,6 +30,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/main_title"
         android:paddingTop="16dp"
+        android:paddingBottom="16dp"
          />
 
 

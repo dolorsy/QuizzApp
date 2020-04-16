@@ -8,15 +8,20 @@
     android:layout_margin="24dp"
     >
 <ImageView
+    android:id="@+id/image_list_item"
+    android:background="@drawable/image_list_background"
     app:layout_constraintTop_toTopOf="parent"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
-    android:layout_marginHorizontal="2dp"
+    android:paddingHorizontal="2dp"
+    android:paddingBottom="2dp"
     android:src="@color/colorPrimary"
-    android:id="@+id/image_list_item"
     android:layout_width="match_parent"
-    android:layout_height="256dp"
-    android:layout_marginTop="2dp"
+    android:layout_height="250dp"
+    android:layout_marginVertical="2dp"
+    android:scaleType="fitXY"
+    android:contentDescription="@string/app_name"
+    android:fontFamily="@font/cabin_condensed_regular"
     />
 
     <TextView
@@ -25,25 +30,26 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
+        android:fontFamily="@font/aldrich"
+        android:text="quiz Name"
         android:textColor="@color/colorPrimarytow"
         android:textSize="32sp"
-        android:text="quiz Name"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/image_list_item"
 
-        />
+        app:layout_constraintTop_toBottomOf="@id/image_list_item" />
 
     <TextView
         android:id="@+id/quiz_desc_list_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
-        
-        android:textSize="16sp"
         android:text="quiz Describtion"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/quiz_name_list_name" />
+        app:layout_constraintTop_toBottomOf="@id/quiz_name_list_name"
+        android:paddingHorizontal="12dp"
+        />
 
     <Button
         android:id="@+id/quiz_start_button"
